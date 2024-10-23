@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Customization</title>
+    <link rel="stylesheet" href="./cc.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <div class="product">
+        <img src="./print cutlery bags (2).png" class="img-1" alt="Base Image"/>
+       
+        <canvas class="img-2" width="300" height="300" alt="Overlay Image"></canvas> <!-- استخدام canvas بدلاً من img -->
+       
+    </div>
+    <div>
+        <img class="logo" src="./Artboard 34.png">
+    </div>
+    <img src="user-logo-placeholder.png" id="userLogo" alt="User Logo" class="logo resizable">
+    
+
+
+
+    <div>
+        <h1>HI WELCOME</h1>
+        <p>I'm the CEO</p>
+        <b>Customize this color:</b>
+        <input type="color" class="color-input" value="#ff0000"/>
+    </div>
+
+
+    <h1>اختر لون الصورة:</h1>
+
+    <!-- القائمة المنسدلة للألوان -->
+    <select id="color-dropdown">
+        <option value="" disabled selected>اختر لونًا</option>
+        <option value="white">أبيض</option>
+        <option value="black">أسود</option>
+        <!-- <option value="green5">أخضر</option> -->
+        <option value="gray">رمادي</option>
+        <option value="green4">خوخي</option>
+        >
+        <option value="yellow4">ذرة</option>
+        <option value="green">أخضر</option>
+        <option value="blue4">أزرق فاتح</option>
+        <option value="blue3">أزرق سماوي</option>
+        <option value="pink">زهري</option>
+        <option value="red2">بودر</option>
+        <option value="pink">زهري</option>
+        <option value="pink2">ليلكي</option>
+        <option value="red">أحمر</option>
+        <option value="yellow">أصفر</option>
+  
+        <option value="red">أحمر</option>
+        <option value="blue4">أزرق</option>
+        <!-- أضف المزيد من الألوان هنا -->
+        <option value="yellow">أصفر</option>
+        <!-- أضف حوالي 20 لونًا كما ترغب -->
+      </select>
+  
+      <!-- الصور -->
+      <div class="image-container">
+        <img src="./ابيض.jpeg" alt="أحمر" class="color-image" data-color="white" />
+        <img src="./اسود.jpeg" alt="أزرق" class="color-image" data-color="black" />
+        <img
+          src="./اخضر غامق.jpeg"
+          alt="أسود"
+          class="color-image"
+          data-color="green5"
+        />
+        <img src="./رمادي.jpeg" alt="أخضر" class="color-image" data-color="gray" />
+        <img
+          src="./خوخي.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="green4"
+        />
+        <img
+          src="./ذرة.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="yellow4"
+        />
+        <img
+          src="./ازرق فاتح.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="blue4"
+        />
+        <img
+          src="./ازرق سماوي.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="blue3"
+        />
+        <img src="./زهري.jpeg" alt="أصفر" class="color-image" data-color="pink" />
+        <img src="./بوردو.jpeg" alt="أصفر" class="color-image" data-color="red2" />
+        <img
+          src="./ليلكي.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="pink2"
+        />
+        <img src="./red.jpeg" alt="أصفر" class="color-image" data-color="red" />
+        <img
+          src="./اصفر.jpeg"
+          alt="أصفر"
+          class="color-image"
+          data-color="yellow"
+        />
+
+
+    <footer>
+        <div class="button-container">
+            <button id="screenshotBtn" class="action-btn">Take Screenshot</button>
+            <button id="uploadLogoBtn" class="action-btn">Upload Logo</button>
+            <input type="file" id="logoUploader" accept="image/*" style="display:none;">
+        </div>
+    
+        <form id="userForm">
+            <div class="form-group">
+                <input type="text" id="userName" placeholder="Username" class="input-field">
+            </div>
+            <div class="form-group">
+                <input type="email" id="userEmail" placeholder="Email" class="input-field">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="userPhone" placeholder="Phone Number" class="input-field">
+            </div>
+            <button type="button" id="saveChangesBtn" class="save-btn">Save Changes</button>
+        </form>
+    </footer>
+    
+    <script src="./cc.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
